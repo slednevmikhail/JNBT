@@ -122,5 +122,12 @@ public final class CompoundTag extends Tag {
 		} else if (!value.equals(other.value)) { return false; }
 		return true;
 	}
-	
+
+	public Tag getTagByPath(String[] path){
+		CompoundTag result = this;
+		for (int i = 0; i < path.length - 1; i++) {
+			result = (CompoundTag) result.getValue().get(path[i]);
+		}
+		return result.getValue().get(path[path.length - 1]);
+	}
 }
