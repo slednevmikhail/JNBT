@@ -31,6 +31,9 @@ JNBT is a library that can read and write NBT files, written in Java by Graham E
 --------------
 
 Version History:
+My additions:
+ - CompoundTag getTagByPath added
+
 1.5 (peerkoel)
 - TAG_Long_Array support
 
